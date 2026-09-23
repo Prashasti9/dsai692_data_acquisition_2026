@@ -46,3 +46,7 @@ def check_item_price(name:str):
     raise HTTPException(status_code=404, 
                         detail="Item not found")
 
+
+# @app.get("/async_product_search"):
+# async def async_product_search(products: list):
+#         await product_search_api(products) # assume product_search_api is imported
