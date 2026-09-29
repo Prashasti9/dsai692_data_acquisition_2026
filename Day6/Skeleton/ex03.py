@@ -18,6 +18,9 @@ class ItemResponse(BaseModel):
     total_worth: float
 
 
-@app.post("/add_items/")
+@app.post("/add_items/", response_model=ItemResponse)
 def create_item(item: Item):
     # TODO: COMPLETE THIS
+    items[item.name]=item
+    total_worth=item.instock_qt*item.price
+    return{"total_worth":total_worth, "name":item.name}

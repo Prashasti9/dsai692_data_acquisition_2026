@@ -12,6 +12,7 @@ Detailed course schedules and slides are in the course Canvas page.
 The following is the overall weekly learning plans.
 - Week 1
 Introduction to ETL, Virtual Environment, GCP Setup
+notes/Prashasti9.md
 - Week 2
 Git Branch, File-based Acquisition and Cloud Storage, Streamlit Application
 - Week 3

@@ -14,6 +14,7 @@ def read_root():
 
 @app.get("/items/{item_id}")
 def read_item_w_path_param(item_id: int):
+    '''We are reading data'''
     return {"item_id": item_id}
 
 
