@@ -9,10 +9,10 @@ with sync_playwright() as p:
     page.goto("https://reddit.com")
 
     # Waiting for Elements
-    page.wait_for_selector("main")  # Wait Until the <main> appears
-
+    page.wait_for_selector("button")  # Wait Until the <main> appears
+    page.locator("button").first.click()
     # Click an anchor with a text, "About Reddit"
-    page.locator("a", has_text="About Reddit").click()
+    # page.locator(".truncate", has_text="About Reddit").click()
     time.sleep(3)
 
     # Wheel to go 150 pxl, 1000 pxl
