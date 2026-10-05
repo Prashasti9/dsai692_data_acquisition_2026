@@ -8,7 +8,7 @@ load_dotenv()
 model_name = "gemini-3.5-flash"
 if "chat" not in st.session_state:
     st.session_state.client = genai.Client(api_key=os.getenv('GEMINI_API_KEY'))
-    st.session_state.chat = st.session_state.client.chats.create(model="gemini-3.5-flash")
+    st.session_state.chat = st.session_state.client.chats.create(model=model_name)
 chat = st.session_state.chat
 
 if "messages" not in st.session_state:
